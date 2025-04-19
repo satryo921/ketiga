@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>on off lampu </title>
+</head>
+
+<body>
+    <img src="assets/images/lampu_off.png" alt="" id="lampu1" />
+    <h1>on off lampu</h1>
+    <button onclick="saklar('on')">NYALAKAN LAMPU</button><br> 
+    <button onclick="saklar('off')">MATIKAN LAMPU</button>
+
+    <!-- ini script js -->
+    <script>
+        function saklar(params){
+            let lampu1 = document.getElementById("lampu1");
+
+            if(params == "on"){
+                lampu1.src = "assets/images/lampu_on.png";
+            }
+            if(params == "off"){
+                lampu1.src = "assets/images/lampu_off.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
